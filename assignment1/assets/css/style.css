@@ -1,6 +1,8 @@
 /* Style Sheet for Louise Miller Portfolio
-	Week 1 Assignment Basic-Portfolio
-	April 2016
+	Week 2 Assignment 1 -Portfolio
+	May 2, 2016
+
+	Added media queries
 */
 
 /* 
@@ -69,7 +71,6 @@ Clearfix (for sections with floats)
 }
 .group {
 	clear: both;
-	*zoom: 1;
 }
 
 /*
