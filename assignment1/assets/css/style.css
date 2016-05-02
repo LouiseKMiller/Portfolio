@@ -212,8 +212,8 @@ Sidebar
 	vertical-align: top;
 	width: 270px; /* requirement */
 	margin-top: 40px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	border: 1px solid #dddddd;
 	background-color: #ffffff;
 }
@@ -242,16 +242,16 @@ Portfolio
 h4 {
 	font-size: 18px;
 	line-height: 30px;
-	width: 250px;
+	width: 96%;
 	font-weight: bold;
 	text-align: center;
 	position: absolute;
-	bottom: 65px;
+	bottom: 70px;
 }
 
 .portfolio-image {
-	height: 200px;
-	width: 250px;
+	height: 100%;
+	width: 100%;
 	padding-bottom: 50px;
 }
 
@@ -264,7 +264,7 @@ Columns
 	display: inline-block;
 	vertical-align: top;
 	width: 50%;
-	height: 200px;
+	height: 240px;
 }
 .grid {
 	padding-left: 10px;
@@ -353,23 +353,24 @@ html, body {
 }
 /*
 ===================================================
-Media Queries
+Media Query - 768px < screen <= 980px
 ===================================================
 */
 
 @media screen and (max-width: 980px) {
+	
 	.container {
-		max-width: 585px;
+		max-width: 732px;
 	}
 
 	.header-left,
 	.main-block {
-		max-width: 300px;
+		max-width: 422px;
 	}
 
 	.header-right,
 	.side-bar {
-		padding-left: 30px;
+		padding-left: 40px;
 	}
 
 	p {
@@ -410,13 +411,13 @@ Media Queries
 		margin-bottom: 25px;
 	}
 	#bio-image {
-		height: 230px;
-		width: 258px;
+		height: 75%;
+		width: 100%;
 		padding-right: 0px;
 		}
 
 	.connection-block {
-		width: 220px;
+		width: 270px;
 	}
 
 	h3 {
@@ -436,15 +437,15 @@ Media Queries
 		margin-right: 2px;
 	}
 	.portfolio-image {
-		height: 200px;
-		width: 255px;
+		height: 100%;
+		width: 100%;
 		padding-bottom: 30px;
 		margin: 0 auto;
 	}
 	h4 {
 		font-size: 15px;
-		line-height: 30px;
-		width: 255px;
+		line-height: 35px;
+		width: 98%;
 		bottom: 40px;
 		margin: 0 auto;
 	}
@@ -454,7 +455,7 @@ Media Queries
 	}
 	.column {
 		width: 100%;
-		height: 200px;
+		height: 250px;
 	}
 	h5 {
 		font-size: 13px;
@@ -462,7 +463,7 @@ Media Queries
 	}
 
 	input {
-		width: 255px;
+		width: 100%;
 		height: 25px;
 		margin-bottom: 10px;
 	}
@@ -472,20 +473,19 @@ Media Queries
 	}
 	button {
 		margin-top: 10px;
-		margin-bottom: 30px;
 		width: 75px;
 		height: 30px;
 	}
 }
-
+/*
+===================================================
+Media Query - 640px < screen <= 768px
+===================================================
+*/
 @media screen and (max-width: 768px) {
 	
-	h1 {
-		background-color: #000;
-	}
-
 	.container {
-		max-width: 650px;
+		max-width: 620px;
 	}
 
 	.header-left {
@@ -493,7 +493,7 @@ Media Queries
 	}
 
 	.header-right {
-		padding-left: 20px;
+		padding-left: 0px;
 	}
 
 	.main-block {
@@ -515,17 +515,17 @@ Media Queries
 	}
 
 	h1 {
-		font-size: 25px;
+		font-size: 24px;
 	}
 	
 	nav {
-		width: 220px;
+		width: 100%;
 		font-size: 14px;
 	}
 	
 	.nav-spacer {
-		margin-left: 3px;
-		margin-right: 3px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.main-block, .connection-block {
@@ -538,14 +538,14 @@ Media Queries
 	}
 
 	h2 {
-		font-size: 25px;
+		font-size: 24px;
 		line-height: 80px;
 		margin-bottom: 25px;
 	}
 	#bio-image {
-		height: 270px;
-		width: 300px;
-		padding-right: 20px;
+		height: 220px;
+		width: 250px;
+		padding-right: 25px;
 		}
 
 	.connection-block {
@@ -571,15 +571,15 @@ Media Queries
 		margin-right: 2px;
 	}
 	.portfolio-image {
-		height: 200px;
-		width: 255px;
+		height: 100%;
+		width: 100%;
 		padding-bottom: 30px;
 		margin-left: 0px;
 	}
 	h4 {
 		font-size: 15px;
 		line-height: 30px;
-		width: 255px;
+		width: 96%;
 		bottom: 40px;
 		margin: 0 auto;
 	}
@@ -589,7 +589,7 @@ Media Queries
 	}
 	.column {
 		width: 50%;
-		height: 200px;
+		height: 250px;
 	}
 	h5 {
 		font-size: 13px;
@@ -607,23 +607,26 @@ Media Queries
 	}
 	button {
 		margin-top: 10px;
-		margin-bottom: 30px;
 		width: 75px;
 		height: 30px;
 	}
 }
 
-	
+/*
+===================================================
+Media Query - screen <= 640px
+===================================================
+*/	
 @media screen and (max-width: 640px) {
-	h1 {
-		background-color: #fff;
-	}
+	
 	.container {
-		max-width: 600px;
+		max-width: 640px;
 	}
 
 	.header-left {
 		display: block;
+		width: 100%;
+		max-width: 640px;
 	}
 
 	.header-right {
@@ -637,57 +640,60 @@ Media Queries
 	.side-bar {
 		display: block;
 	}
+
 	p {
-		font-size: 15px;
-		line-height: 1.5;
+		font-size: 12px;
+		line-height: 2.0;
 	}
 
 	header {
 		line-height: 60px;
-	}
+		}
 
 	h1 {
-		font-size: 25px;
+		font-size: 20px;
+		width: 100%;
 	}
 	
 	nav {
-		font-size: 14px;
+		font-size: 12px;
+		text-align: center;
+		line-height: 40px;
 	}
 	
 	.nav-spacer {
-		margin-left: 3px;
-		margin-right: 3px;
+		margin-left: 7%;
+		margin-right: 7%;
+		color: #fff;
 	}
 
-	.main-block, .connection-block {
-		margin-top: 30px;
+	.main-block, .side-bar {
+		margin: 15px auto;
+		width: 90%;
 	}
 
 	.main-block {
-		margin-bottom: 20px;
 		padding: 0 20px 20px 20px;
 	}
 
 	h2 {
-		font-size: 25px;
-		line-height: 80px;
+		font-size: 20px;
+		line-height: 65px;
 		margin-bottom: 25px;
 	}
 	#bio-image {
-		height: 75%;
+		height: 55%;
 		width: 100%;
 		padding-right: 0px;
 		padding-bottom: 20px;
 		}
-
 	.connection-block {
-		width: 100%;
-		margin-bottom: 20px;
+		margin-top: 15px;
 	}
 
 	h3 {
 		font-size: 16px;
-		line-height: 60px;
+		line-height: 50px;
 		margin-left: 20px;
 		margin-right: 20px;
 		margin-bottom: 24px;
@@ -703,16 +709,16 @@ Media Queries
 		margin-right: 2px;
 	}
 	.portfolio-image {
-		height: 450px;
-		width: 550px;
+		height: 75%;
+		width: 100%;
 		padding-bottom: 30px;
 		margin-left: 0px;
 	}
 	h4 {
-		font-size: 20px;
-		line-height: 70px;
-		width: 550px;
-		bottom: 120px;
+		font-size: 17px;
+		line-height: 40px;
+		width: 98%;
+		bottom: 40px;
 		margin: 0 auto;
 	}
 	.grid {
@@ -720,8 +726,8 @@ Media Queries
 		padding-right: 0px;
 	}
 	.column {
-		width: 550px;
-		height: 500px;
+		width: 100%;
+		height: 75%;
 	}
 	h5 {
 		font-size: 13px;
@@ -735,11 +741,10 @@ Media Queries
 	}
 
 	#message {
-		height: 200px;
+		height: 185px;
 	}
 	button {
 		margin-top: 10px;
-		margin-bottom: 30px;
 		width: 75px;
 		height: 30px;
 	}
