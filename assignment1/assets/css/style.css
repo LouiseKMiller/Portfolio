@@ -1,0 +1,746 @@
+/* Style Sheet for Louise Miller Portfolio
+	Week 1 Assignment Basic-Portfolio
+	April 2016
+*/
+
+/* 
+=====================================
+ Grid
+ =====================================
+ */
+
+ *,
+ *:before,
+ *:after {
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+
+ .container {
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 960px; /* requirement */
+}
+
+/*
+===================================================
+Background artwork
+===================================================
+*/
+.pretty-background {
+	background-image: url("../images/asanoha-400px.png");
+}
+
+/*
+========================================
+Using in-line block elements
+========================================
+*/
+.header-left,
+.main-block {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	max-width: 650px; /* requirement */
+}
+
+.header-right,
+.side-bar {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 40px;
+}
+
+
+
+/*========================================
+Clearfix (for sections with floats)
+========================================
+*/
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+.group:after {
+	clear: both;
+}
+.group {
+	clear: both;
+	*zoom: 1;
+}
+
+/*
+Alternative clearfix 
+.clearfix {
+	overflow: auto;
+	/* added to support IE6 */ 
+	/* zoom: 1;
+}
+*/
+
+/*
+ ======================================
+ Colors (all requirements)
+ ======================================
+ */
+body {
+	color: #777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+h1, h4 {
+	background-color: #4aaaa5;
+	color: #fff;
+}
+h2, h3 {
+	color: #4aaaa5;
+}
+footer {
+	color: #fff;
+}
+
+/*
+ ======================================
+ Typography
+ ======================================
+ */
+
+ h1, h2, h3, h4 {
+ 	font-family: 'Georgia', Times, 'Times New Roman', serif;
+ } /* requirement */
+
+p {
+	font-size: 18px;
+	line-height: 2.0;
+}
+
+  /*
+===================================================
+Links
+===================================================
+*/
+a:link, a:visited {
+	color: #ccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #4aaaa5;
+}
+
+a:active {
+	color: #4aaaa5;
+}
+ /*
+===================================================
+Header
+===================================================
+*/
+header {
+	border-bottom: 2px solid #cccccc;
+	background-color: #ffffff;
+	line-height: 90px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 700;
+	width: 250px;
+	text-align: center;
+}
+
+nav {
+	width: 257px;
+	font-size: 18px;
+	text-align: right;
+	}
+
+.nav-spacer {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+/*
+===================================================
+Main section
+===================================================
+*/
+.main-block {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 0 30px 30px 30px;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+}
+h2 {
+	font-size: 30px;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 30px;
+	border-bottom: 3px solid #dddddd;
+}
+
+#bio-image {
+	float: left;
+	height: 200px;
+	width: 200px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+}
+
+.main-content {
+	text-align: left;
+	margin: 0 auto;
+}
+/*
+===================================================
+Sidebar
+===================================================
+*/
+.connection-block {
+	display: inline-block;
+	vertical-align: top;
+	width: 270px; /* requirement */
+	margin-top: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 70px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 24px;
+	border-bottom: 2px solid #dddddd;
+}
+#thumbnail-section {
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 24px;
+}
+
+
+/*
+===================================================
+Portfolio
+===================================================
+*/
+
+h4 {
+	font-size: 18px;
+	line-height: 30px;
+	width: 250px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	bottom: 65px;
+}
+
+.portfolio-image {
+	height: 200px;
+	width: 250px;
+	padding-bottom: 50px;
+}
+
+/*
+ ======================================
+Columns
+ ======================================
+*/
+.column {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	height: 200px;
+}
+.grid {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.column {
+	padding-left: 1%;
+	padding-right: 1%;
+	position: relative;
+}
+
+/*
+===================================================
+Contact Section
+===================================================
+*/
+
+h5 {
+	font-size: 15px;
+	line-height: 30px;
+}
+
+input {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+#message {
+	height: 200px;
+}
+button {
+	background-color: #4aaaa5;
+	color: white;
+	margin-top: 20px;
+	width: 115px;
+	height: 40px;
+}
+
+/*
+===================================================
+images
+===================================================
+*/
+.thumbnail {
+	height: 60px;
+	width: 60px;
+	margin-right: 2px;
+}
+
+
+/*
+===================================================
+Sticky Footer
+===================================================
+*/
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -70px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .page-wrap:after {
+	height: 70px;
+}
+
+.site-footer {
+	background-color: #666666;
+	line-height: 64px;
+	font-size: 13px;
+	text-align: center;
+	border-top: 6px solid #4aaaa5;
+}
+/*
+===================================================
+Media Queries
+===================================================
+*/
+
+@media screen and (max-width: 980px) {
+	.container {
+		max-width: 585px;
+	}
+
+	.header-left,
+	.main-block {
+		max-width: 300px;
+	}
+
+	.header-right,
+	.side-bar {
+		padding-left: 30px;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	header {
+		line-height: 60px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+	
+	nav {
+		width: 220px;
+		font-size: 14px;
+	}
+	
+	.nav-spacer {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	.main-block, .connection-block {
+		margin-top: 30px;
+	}
+
+	.main-block {
+		margin-bottom: 30px;
+		padding: 0 20px 20px 20px;
+	}
+
+	h2 {
+		font-size: 25px;
+		line-height: 80px;
+		margin-bottom: 25px;
+	}
+	#bio-image {
+		height: 230px;
+		width: 258px;
+		padding-right: 0px;
+		}
+
+	.connection-block {
+		width: 220px;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 60px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 24px;
+	}
+	#thumbnail-section {
+		width: 170px;
+		margin-bottom: 24px;
+	}
+	.thumbnail {
+		height: 50px;
+		width: 50px;
+		margin-right: 2px;
+	}
+	.portfolio-image {
+		height: 200px;
+		width: 255px;
+		padding-bottom: 30px;
+		margin: 0 auto;
+	}
+	h4 {
+		font-size: 15px;
+		line-height: 30px;
+		width: 255px;
+		bottom: 40px;
+		margin: 0 auto;
+	}
+	.grid {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.column {
+		width: 100%;
+		height: 200px;
+	}
+	h5 {
+		font-size: 13px;
+		line-height: 25px;
+	}
+
+	input {
+		width: 255px;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+
+	#message {
+		height: 200px;
+	}
+	button {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		width: 75px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	h1 {
+		background-color: #000;
+	}
+
+	.container {
+		max-width: 650px;
+	}
+
+	.header-left {
+		max-width: 400px;
+	}
+
+	.header-right {
+		padding-left: 20px;
+	}
+
+	.main-block {
+		display: block;
+		max-width: 100%;
+	}
+
+	.side-bar {
+		display: block;
+		padding-left: 0px;
+	}
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	header {
+		line-height: 60px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+	
+	nav {
+		width: 220px;
+		font-size: 14px;
+	}
+	
+	.nav-spacer {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	.main-block, .connection-block {
+		margin-top: 30px;
+	}
+
+	.main-block {
+		margin-bottom: 20px;
+		padding: 0 20px 20px 20px;
+	}
+
+	h2 {
+		font-size: 25px;
+		line-height: 80px;
+		margin-bottom: 25px;
+	}
+	#bio-image {
+		height: 270px;
+		width: 300px;
+		padding-right: 20px;
+		}
+
+	.connection-block {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 60px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 24px;
+	}
+	#thumbnail-section {
+		width: 100%;
+		margin-bottom: 24px;
+		margin-left: 20px;
+	}
+	.thumbnail {
+		height: 50px;
+		width: 50px;
+		margin-right: 2px;
+	}
+	.portfolio-image {
+		height: 200px;
+		width: 255px;
+		padding-bottom: 30px;
+		margin-left: 0px;
+	}
+	h4 {
+		font-size: 15px;
+		line-height: 30px;
+		width: 255px;
+		bottom: 40px;
+		margin: 0 auto;
+	}
+	.grid {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.column {
+		width: 50%;
+		height: 200px;
+	}
+	h5 {
+		font-size: 13px;
+		line-height: 25px;
+	}
+
+	input {
+		width: 100%;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+
+	#message {
+		height: 200px;
+	}
+	button {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		width: 75px;
+		height: 30px;
+	}
+}
+
+	
+@media screen and (max-width: 640px) {
+	h1 {
+		background-color: #fff;
+	}
+	.container {
+		max-width: 600px;
+	}
+
+	.header-left {
+		display: block;
+	}
+
+	.header-right {
+		display: block;
+	}
+
+	.main-block {
+		display: block;
+	}
+
+	.side-bar {
+		display: block;
+	}
+	p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	header {
+		line-height: 60px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+	
+	nav {
+		font-size: 14px;
+	}
+	
+	.nav-spacer {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	.main-block, .connection-block {
+		margin-top: 30px;
+	}
+
+	.main-block {
+		margin-bottom: 20px;
+		padding: 0 20px 20px 20px;
+	}
+
+	h2 {
+		font-size: 25px;
+		line-height: 80px;
+		margin-bottom: 25px;
+	}
+	#bio-image {
+		height: 75%;
+		width: 100%;
+		padding-right: 0px;
+		padding-bottom: 20px;
+		}
+
+	.connection-block {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		font-size: 16px;
+		line-height: 60px;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 24px;
+	}
+	#thumbnail-section {
+		width: 100%;
+		margin-bottom: 24px;
+		margin-left: 20px;
+	}
+	.thumbnail {
+		height: 50px;
+		width: 50px;
+		margin-right: 2px;
+	}
+	.portfolio-image {
+		height: 450px;
+		width: 550px;
+		padding-bottom: 30px;
+		margin-left: 0px;
+	}
+	h4 {
+		font-size: 20px;
+		line-height: 70px;
+		width: 550px;
+		bottom: 120px;
+		margin: 0 auto;
+	}
+	.grid {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.column {
+		width: 550px;
+		height: 500px;
+	}
+	h5 {
+		font-size: 13px;
+		line-height: 25px;
+	}
+
+	input {
+		width: 100%;
+		height: 25px;
+		margin-bottom: 10px;
+	}
+
+	#message {
+		height: 200px;
+	}
+	button {
+		margin-top: 10px;
+		margin-bottom: 30px;
+		width: 75px;
+		height: 30px;
+	}
+}
